@@ -37,7 +37,7 @@ const config: DocsThemeConfig = {
   },
   logo: <Logo />,
   footer: {
-    text: `© ${new Date().getFullYear()} WyvernWiki. All rights reserved.`
+    text: `© ${new Date().getFullYear()} Galrion Softworks. All rights reserved.`
   },
   primaryHue: 24.6, // This corresponds to your --primary in the CSS
   components: {
