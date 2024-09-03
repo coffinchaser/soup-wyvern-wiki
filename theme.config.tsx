@@ -22,15 +22,14 @@ const config: DocsThemeConfig = {
       <>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content={frontMatter.title || 'WyvernWiki'} />
-        <meta property="og:description" content={frontMatter.description || 'WyvernWiki is the central repository for all guides related to WyvernChat, TalOS, and SleepStories.'} />
+        <meta property="og:description" content={frontMatter.description || 'WyvernWiki is the central repository for all guides related to WyvernChat, TalOS, and other Galrion Softworks Projects.'} />
         <meta property="og:image" content="/icon.png" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@WyvernWiki" />
         <meta name="twitter:creator" content="@WyvernWiki" />
         <meta name="twitter:title" content={frontMatter.title || 'WyvernWiki'} />
-        <meta name="twitter:description" content={frontMatter.description || 'WyvernWiki is the central repository for all guides related to WyvernChat, TalOS, and SleepStories.'} />
-        <meta name="twitter:image" content="/icon.png" />
-        <meta name="twitter:image:alt" content="WyvernWiki" />
+        <meta name="twitter:description" content={frontMatter.description || 'WyvernWiki is the central repository for all guides related to WyvernChat, TalOS, and other Galrion Softworks Projects.'} />
         <link rel="icon" href="/icon.png" />
         <link rel="apple-touch-icon" href="/icon.png" />
       </>
