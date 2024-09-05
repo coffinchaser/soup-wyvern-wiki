@@ -8,7 +8,7 @@ This page is a WIP, but I like the desktop layout quite a bit. Mobile will alway
 Well, let's start with the obvious question; "Nevyn, what's an 'Entry Point'?"
 Well dear reader, an 'Entry Point' is just the name I came up with for a sort of a Scenario Start. But, saying 'Scenario Starts' sounds stupid, so 'Entry Point' it is. Essentially, you can have as many of these as you want, and they're different ways for the player to start out their adventure in your world. You get a custom opening, author's note, instruct, player variables, etc. everything in that Entry Point tab is unique per Entry Point. This should let you create a world, and then assemble some different ways to jump into it. 
 #### Player Variables
-Each variable is summoned in the prompt context via `{{variableName}}`. These variables are gathered from the Player at the start of the scenario. The AI will use these variables to generate the story. Each variable will be asked for with an associated question.
+Each variable is summoned in the prompt context via `{{variableName}}`. These variables are gathered from the Player at the start of the scenario via a Question prompt. The AI will use these variables to generate the story. Each variable will be asked for with an associated question.
 You can put these `{{variableName}}` inside all of the following Entry Point fields and they will be replaced as the story is generated.
 #### Opening
 
@@ -19,3 +19,6 @@ An opening is the very first thing the player sees when loading into a new log. 
 As you can see there, I left the last sentence unfinished. This is not required, but if done can allow the user to have a more unique start to your scenario.
 
 #### Author's Note
+Despite the name, this is not the equivalent of a book's author's note. This is more like a sticky note to the AI that is used to give it extra bits of context, or relavant information. As you can see in the example below, it's utilized to give the AI information related to the player's character, and also uses the `{{variableName}}` to insert the player's information into the note.
+
+> \{\{name\}\}'s description: \{\{name\}\}'s appearance: \{\{appearance\}\}; \{\{name\}\}'s degree: \{\{degree\}\}; \{\{name\}\}'s age; \{\{age\}\}. \{\{name\}\} is \{\{gender\}\}.
