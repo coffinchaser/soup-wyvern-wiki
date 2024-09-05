@@ -2,6 +2,7 @@ import React from 'react'
 import { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
 import Logo from './components/Logo'
+import Image from 'next/image'
 
 const config: DocsThemeConfig = {
   nextThemes: {
@@ -10,6 +11,15 @@ const config: DocsThemeConfig = {
   },
   chat: {
     link: 'https://discord.gg/xs8v3TbwJq',
+  },
+  project: {
+    icon: () => (<Image 
+      src="/waywy.svg" 
+      alt="WyvernWiki"
+      width={40}
+      height={40}
+    />),
+    link: 'https://app.wyvern.chat/',
   },
   useNextSeoProps() {
     return {
