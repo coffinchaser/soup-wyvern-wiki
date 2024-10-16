@@ -1,6 +1,6 @@
 # Chatting with an AI model
 
-It's normal for people new to this kind of platform to be unsure about what it means to roleplay with an AI model.
+This section is meant to explain to beginners what it means to roleplay with an AI model.
 By oversimplifying things, interacting with an AI model means speaking with a very intelligent machine, that will dynamically generate its answer depending on:
 1) What it was instructed to do.
 2) What you asked of it.
@@ -37,13 +37,15 @@ By selecting the **chat** button, you'll be brought to the chat page, starting t
 
 ![Chat Page](../../assets/Chat-mode_ChatPage.png)
 
+The following section will introduce the base usage of the chatting interface and give some helpful tips to improve the quality of the roleplay experience.
+
 This page is where the roleplay happens. The details of what each icon in this page does can be viewed in the *chat settings* page (to-do).
 
 The roleplay starts with a first message sent by the character. In the chatbox at the bottom of the page, you'll be able to write your response to this first message, starting the roleplay.
 
 ### Who are you in this roleplay?
 
-While the character's card contains all the information about it, the information about who YOU are in this roleplay can be given by setting up a **'Persona'**. To do so, click the following button in the top right corner of the page
+While the character's card contains all the information about the character, the information about who YOU are in this roleplay can be given by setting up a **'Persona'**. To do so, click the following button in the top right corner of the page
 
 ![Chat Persona Button](../../assets/Chat-mode_ChatPagePersonaButton.png)
 
@@ -55,20 +57,40 @@ In this field it is possible to insert a description of who you're playing as in
 
 If you don't fill out a persona, the AI will initially consider you a non-descriptive individual and will try to assign you an identity over the course of the roleplay depending on what is being written in the responses (es: if you use specific pronouns to refer to yourself). Generally, it's ALWAYS better to write down a persona.
 
+### Model selection
+
+In order to start chatting, you will have to select the AI model that is going to write the character answers. Different models are programmed in different way and trained on different sets of documents, stories, and data in general. This means the every model gives a unique chatting experience.
+
+The AI model can be selected by opening the 'AI setting' section by clicking the following button in the top right corner of the page
+
+![Chat Settings Button](../../assets/Chat-mode_ChatPageSettingsButton.png)
+
+WyvernChat, thanks to his partnership with the AI models provider Featherless.ai, offers 4 different free AI models to chat with. Chatting with these models is completely free and uncensored, but a queue system was implemented in order to ensure that all users are able to use the service for free, and to prevent abuse of the system. There is an enforced wait time of 5 seconds per message, this may be increased or decreased depending on the current server load.
+
+![Chat Settings Button](../../assets/Chat-mode_ChatPageFreeModels.png)
+
+Each of these 4 AI models is a roleplay focused model, meaning that roleplay related stories and documents have been used in their creation, allowing to perform much better when roleplaying as a character.
+
+All free models have 16384 'tokens' worth of memory. A 'token' in the context of these AI models is a basic unit of text, such as a word or a symbol like a punctuation mark, that the model uses to understand and generate language. It's like the building blocks that the model uses to analyze and create sentences.
+
+In this case, memory means how much of the generated text during the roleplay the AI is actually able to remember when generating its responses. The content of the character's card is ALWAYS kept in memory, constantly consuming part of the token limit. The rest of the messages generated during the roleplay will slowly fill up the memory up to this limit of 16384 tokens. Once the limit is reached, from the next message generated the AI will start 'forgetting' past text starting from the first message of the roleplay. That being said, 16384 is a generous amount able to get almost any narrative going.
+
+In case you have a subscription to a provider of AI models, you can disable the free queue by clicking on the 'Free Queue' button and setting up a connection to your provider. More details on this operation are present in the [connections](https://wiki.wyvern.chat/wyvernchat/connections) section of the wiki.
+
 ### Can I just write whatever I want in the chatbox?
 
 Pretty much. With the exclusion of the more peculiar character cards, a roleplay typically takes the form of a 'discussion' between you and the character, where you write in the chatbox what you do and what you say to them, and the AI will generate a response while staying in character.
 
 While doing so, there are a few **points of attention** that should be kept in mind.
 
-### Trash in, trash out
+#### Trash in, trash out
 
 During a roleplay the AI will try to 'learn' from how you write your answers, in order to match their writing style to yours. If you are providing low quality, one-line responses, the AI is going to have to do the heavy lifting for you to try and fill in the gaps. But this means that it often will do a lot of things that you may not want.
 
-Sending a message like: 
+Sending a message like:
 > 'The Dragon moves a few feet. I raise my shield.'
 
-Compared to: 
+Compared to:
 > 'Blood dripped from the dragon's open maw, the flicker of deadly fire can be seen raging within its throat as it approaches the pair. Its eyes gleam with a predatory malice, its footfalls shaking the earth itself as > it focuses on its next meal. "Get behind my shield!" Statuo shouts, desperation fueling his magic as he pours everything he has into weaving mana around him. Gods, it may not be enough.'
 
 Will cause the AI to generate VASTLY different responses. The first one will most likely cause a much shorter and less detailed answer from the AI than the second one.
@@ -79,25 +101,25 @@ This principle is meant to get across that a bot is going to learn from you, but
 
 A useful tip is to **give the bot something to do**. If you don't specify what you want the bot to do, they'll often flip-flop around and do whatever they want or the AI will get confused and start to talk as you, the user.
 
-Example 1: 
+Example 1:
 > 'Statuo stares at the Goblin cave ahead of him. The tracks - and bodies - had all led here. Readying his lance, he takes a deep breath of fresh air. The moment he stepped inside it would reek of goblin filth. He hated taking these quests.'
 
 This is a decent post and the bot is likely to be fine with it. But as with most things, it could be better.
 
-Example 2: 
+Example 2:
 > 'Statuo stares at the Goblin cave ahead of him. The tracks - and bodies - had all led here. Readying his lance, he takes a deep breath of fresh air. The moment he stepped inside it would reek of goblin filth. He > hated taking these quests. "Arryn," he spoke quietly, not wanting to alert anything nearby. "Tell me, do you see any traps? Any scouts? It's strange that we have not been attacked yet.'
 
 This now gives the bot a prompt to action and lets it know that there is the possibility of goblins being nearby, or traps that could be used. **By giving the bot something to do as well, it lessens the chance of the bot speaking for you.**
 
-### Should I write in first person? Second? Third?
+#### Should I write in first person? Second? Third?
 
 When referring to how you respond to the bot there are three types of ways to write it:
 
-1) First Person refers to writing as if you were narrating what was happening from your point of view: 
+1) First Person refers to writing as if you were narrating what was happening from your point of view:
 > 'I opened the door.', 'I smiled at Naomi.'
-2) Second Person refers to writing as if you were the reader: 
+2) Second Person refers to writing as if you were the reader:
 > 'You open the door.', 'You smile at Naomi.'
-3) Third Person refers to writing as if you were narrating events that happen to other characters: 
+3) Third Person refers to writing as if you were narrating events that happen to other characters:
 > 'Statuo opens the door.', 'Statuo smiles at Naomi.'
 
 **Never use Second Person with bots.** Writing in such a way will absolutely confuse the AI about who is who and what is going on in the roleplay.
@@ -108,3 +130,4 @@ When referring to how you respond to the bot there are three types of ways to wr
 3) Third person is more consistent in longer roleplays, especially if secondary characters appear often. The AI tends to be able to recognize and properly act as the different characters, but it may occasionally become confused and start to talk as you.
 
 Personally, I use third person. But - again - either is fine. The most important thing is remembering to **not switch person often**, otherwise the AI might start getting confused.
+
