@@ -1,2 +1,6 @@
 .next
 node_modules
+.idea/modules.xml
+.idea/material_theme_project_new.xml
+.idea/vcs.xml
+.idea/wyvern-wiki.iml
