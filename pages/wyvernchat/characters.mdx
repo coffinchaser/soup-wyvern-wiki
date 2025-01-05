@@ -2,20 +2,18 @@
 
 Welcome to the **Character Creation Guide** for WyvernChat! This guide will walk you through the process of creating your first character, enabling engaging and interactive chats. Customize everything—from your character's **appearance and backstory** to their **unique personality traits**.
 
-
-
 ## Required vs. Optional Fields
 
 - **Fields marked with ★ are required** to create a character.
 - All other fields are optional but allow you to add depth and personality.
 
-
-
 ## Character Profile
 
-### <span style="color:#ee6c2b;">Profile Photo ★</span>
+### Profile Photo ★
+![PNG Detected](/assets/Characters/PNG%20Detected.png)
 
-- **Purpose:** Upload an image to give your character a face. If the image contains metadata, character details may import automatically; otherwise, it serves as the avatar.
+If the image contains metadata (like a SillyTavern character card), click `Yes` to automatically import character details. Click `No` if you only wish to use the uploaded image as the avatar.
+- **Purpose:** Upload an image to give your character a face.
 - **Recommendations:**
   - Aspect ratio: **109:214**
   - Format: **PNG**
@@ -23,28 +21,26 @@ Welcome to the **Character Creation Guide** for WyvernChat! This guide will walk
   - Check file size and format compatibility if the image fails to upload.
   - Ensure the file is a valid PNG.
 
-### <span style="color:#ee6c2b;">Name ★</span>
+### Name ★
 
 - **Purpose:** The name identifies your character in the system and appears on the character card. If no **Chat Name** is provided, this field replaces the placeholder `{{char}}`.
-- **Example:** Johnathan Doe
+- **Example:** Jonathan Doe
 - **Need inspiration?** Explore Fantasy Name Generators.
 
 ### Chat Name
 
 - **Purpose:** Identifies your character in the system and replaces the placeholder `{{char}}`.
-- **Example:** Use "Joe" instead of "Johnathan Doe."
+- **Example:** Use "Joe" instead of "Jonathan Doe."
 
 ### Character Sprites
 
 - **Purpose:** Visual aids showing your character's emotions in the chat interface, similar to illustrations in light novels.
-- **Recommendations:**[^1]
+- **Recommendations:** per Tonic (tonic4k on Discord)
   - Image size: **1024x1536**
   - Position the face in the **upper 40%** of the image to avoid text overlap in mobile views.
 - **Troubleshooting:**
   - Ensure the image dimensions meet recommendations.
   - Check face positioning to prevent parts from being obscured.
-
-
 
 ### Model (Optional)
 
@@ -55,22 +51,17 @@ Welcome to the **Character Creation Guide** for WyvernChat! This guide will walk
 - **Troubleshooting:**
   - Validate VRM files with tools like **Unity** or **VRoid Studio**.
 
-
-
 ### Profile Bio
-
+![Profile Bio](/assets/Characters/Profile%20Bio.png)
 - **Purpose:** Capture your character’s essence with a short, engaging description. This is also a good place to include tidbits like a known character trope (tsundere, childhood friend, isekai), character series, original sources, or participation in WyvernChat events.
 - **Examples:**
-  - Fantasy Adventurer: *"A rogue thief from Eldarath seeking redemption after a life of crime."*
-  - Sci-Fi Explorer: *"Captain of the SS Voyager, navigating uncharted galaxies in search of alien civilizations."*
+  - Fantasy Adventurer: `A rogue thief from Eldarath seeking redemption after a life of crime.`
+  - Sci-Fi Explorer: `Captain of the SS Voyager, navigating uncharted galaxies in search of alien civilizations.`
 
 ### Profile Background
-
 - **Function:** Set a background image for your character’s full-screen card or use it during chats.
 - **Recommendations:**
   - Choose a background that complements your character's theme (e.g., a castle for a knight, a starfield for a space explorer).
-
-
 
 ## Card Details
 
@@ -85,42 +76,40 @@ Add dynamic elements for personalized interactions:
 
 1. **Description:** Outline appearance, personality, motives, and quirks.
 
-   - Example: *"{{char}} always twirls their pen when thinking and quotes poetry unexpectedly."*
+   - Example: `{{char}} always twirls their pen when thinking and quotes poetry unexpectedly.`
 
 2. **Example Scenes:** Showcase how your character interacts.
 
-   - Example: *[Scene: A quiet coffee shop. {{char}} sips a latte by the window on a rainy evening.]*
+   - Example: `[Scene: A quiet coffee shop. {{char}} sips a latte by the window on a rainy evening.]`
 
 3. **Multi-Turn Example Dialogues:**
 
    - **Standard Interaction Example:**
-     ```
-     {{user}}: "What’s the best book you’ve read recently?"
-     {{char}}: "Ah, that would be 'The Art of War.' A timeless masterpiece. Have you read it?"
-     {{user}}: "Not yet. Do you recommend it?"
-     {{char}}: "Absolutely. It teaches strategy, but I must warn you—it’s more about philosophy than tactics."
-     ```
+  ```
+    {{user}}: "What’s the best book you’ve read recently?"
+    {{char}}: "Ah, that would be 'The Art of War.' A timeless masterpiece. Have you read it?"
+    {{user}}: "Not yet. Do you recommend it?"
+    {{char}}: "Absolutely. It teaches strategy, but I must warn you. It’s more about philosophy than tactics."
+  ```
    - **High-Stakes Interaction Example:**
-     ```
-     {{user}}: "We’re running out of time. What should we do?"
-     {{char}}: "Calm down. Let’s evaluate our options logically. If we rush, we might overlook something critical."
-     {{user}}: "But we don’t have all the details yet!"
-     {{char}}: "Exactly. That’s why gathering intel is the priority. I’ll handle reconnaissance—you stay here and prepare the fallback plan."
-     ```
+  ```
+    {{user}}: "We’re running out of time. What should we do?"
+    {{char}}: "Calm down. Let’s evaluate our options logically. If we rush, we might overlook something critical."
+    {{user}}: "But we don’t have all the details yet!"
+    {{char}}: "Exactly. That’s why gathering intel is the priority. I’ll handle reconnaissance. You stay here and prepare the fallback plan."
+  ```
    - **Emotional Interaction Example:**
-     ```
-     {{user}}: "I feel like I’ve failed everyone."
-     {{char}}: "Hey, listen to me. Failure isn’t the end—it’s a step toward growth. What matters is how you rise after falling."
-     {{user}}: "It’s not that simple."
-     {{char}}: "I know it’s not, but you don’t have to do it alone. Lean on me, and we’ll face this together."
-     ```
+  ```
+    {{user}}: "I feel like I’ve failed everyone."
+    {{char}}: "Hey, listen to me. Failure isn’t the end. It’s a step toward growth. What matters is how you rise after falling."
+    {{user}}: "It’s not that simple."
+    {{char}}: "I know it’s not, but you don’t have to do it alone. Lean on me, and we’ll face this together."
+  ```
 
 4. **Character Notes:** Summarize key traits succinctly.
 
    - Example:
-     ```
-     {{char}}: height(6'2"), hair(black, short), personality(charming but aloof), likes(puzzles, sunsets), dislikes(rude people).
-     ```
+     `{{char}}: height(6'2"), hair(black, short), personality(charming but aloof), likes(puzzles, sunsets), dislikes(rude people).`
 
 ## Scenario Details
 
@@ -128,73 +117,53 @@ Add dynamic elements for personalized interactions:
 
 - **Function:** Create an immersive setting for interactions.
 - **Example:**
-  ```
-  Era: near future (2045, post-technological singularity); Location: Neo Tokyo (megacity, floating districts); Setting: cyberpunk (high tech, low life), dystopian (corporate control)
-  ```
+  `Era: near future (2045, post-technological singularity); Location: Neo Tokyo (megacity, floating districts); Setting: cyberpunk (high tech, low life), dystopian (corporate control)`
 - **Note:** Use this field for overarching world information that won’t change during the conversation. Avoid over-defining the scene, which could block organic development.
 
 ### Default First Message
 
 - **Function:** The initial message users see when interacting with your character.
-- **Example:** *"You know, there’s something poetic about raindrops—it’s like nature’s heartbeat."*
+- **Example:** `"You know, there’s something poetic about raindrops. It’s like nature’s heartbeat."`
 
 ### Alternate Greetings
 
-- **Purpose:** Add variety with alternate first messages.
+- **Purpose:** Add variety with many different first messages.
 - **Examples:**
-  - Seasonal: *"Merry Christmas, {{user}}! Care for some hot cocoa?"*
-  - Mood-Specific: *"It’s a stormy night, {{user}}. Perfect weather for a ghost story."*
+  - Seasonal: `"Merry Christmas, {{user}}! Care for some hot cocoa?"`
+  - Mood-Specific: `"It’s a stormy night, {{user}}. Perfect weather for a ghost story."`
 
-
-
-## Advanced Fields (Optional)
-
+## Advanced Fields
 - **System Prompt:** Customize how the AI interprets the character. Only adjust this if you have prompt-engineering experience.
 - **Reinforcement Prompt:** Helps maintain consistency in the AI's portrayal of your character.
 - **AI Image Prompt:** Add descriptions for generating images with tools like MidJourney, DALLE, or Stable Diffusion.
 
 ## Publishing Details
 
-### <span style="color:#ee6c2b;">Display Description ★</span>
+### Display Description ★
+![Display Description](/assets/Characters/Display%20Description.png)
 Summarize your character for search results.
 ### Lorebooks
 Attach one or more Lorebooks to add detailed world-building linked to your character.
 ### Tags
 - Help others discover your character.
 - SFW and NSFW tags are separated by what Content Rating applied.
-### <span style="color:#ee6c2b;">Content Rating ★</span>
+### Content Rating ★
 *Label appropriately. Mislabeling can lead to penalties.*
-  - None: Safe for anyone who can consistently differentiate between reality and fiction.
-    - Violence: Minimal, like brief mentions of past events.
-    - Language: Infrequent use of mild language.
-  - Mature:
-    - Romance **WITHOUT** sexual content.
-    - Violence: Intese and frequent.
-    - Language: Crude, strong and graphic.
-    - Dark themes such as consensual non-consensual (CNC), drug use, abuse, mental health, gambling, etc... 
-  - Explicit:
-    - Graphic sexual content and descriptions.
-    - Violence: Intese and frequent.
-    - Language: Crude, strong and graphic.
-    - Romance **WITHOUT** sexual content.
-    - Dark themes such as consensual non-consensual (CNC), drug use, abuse, mental health, gambling, etc... 
-*Label appropriately. Mislabeling can lead to penalties.*
-<!--We need a separate page on the Wiki for Content Rating with a Change Log since this is still a work in progress from the moderation team. I'm going by ESRB rating categories.-->
+
+- None → Safe for general audience only
+- Mature → Teen/Young Adult content (non-explicit)
+- Explicit → Adult content
+
+{/*We need a separate page on the Wiki for Content Rating with a Change Log since this is still a work in progress from the moderation team. I'm going by ESRB rating categories.*/}
 ### Visibility 
 - **Public:** Viewable by anyone, even outside WyvernChat.
-- Draft A work-in-progress visible only to you. Functionally the same as Private, some users just prefer to separate their unfinished from finished characters.
-- Private Exclusive to you, no shareable link. <span style="color:#ee6c2b;">Clicking View Profile for Private characters will yield a 404 error.</span>
-- Friends Only: Accessible only to other WyvernChat users who you've accepted a friend request from.
+- **Draft:** A work-in-progress visible only to you. Functionally the same as Private, some users just prefer to separate their unfinished from finished characters.
+- **Private:** Exclusive to you, no shareable link. Clicking View Profile for Private characters will yield a 404 error.
+- **Friends Only:** Accessible only to other WyvernChat users who you've accepted a friend request from.
 
 ### Save and Share
 
 - Click **Save** to publish your character.
 - Use **PNG format** to download a V2 Character Card.
 
----
-
 And you're done! Your character will be reviewed by a moderation team member to ensure what you've posted adheres to our [Content Policy](https://app.wyvern.chat/policy) and you should receive a notification in your [Social & Feed] tab within **24-48 hours**.
-<!--Maybe we can embed a queue counter for this, like getting your number assigned at the DMV. Horrible example, but you get the gist.-->
-
-## Footnotes
-[^1] Tonic (tonic4k on Discord)
