@@ -8,9 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@mdx-js/react':
+        specifier: ^3.1.0
+        version: 3.1.0(@types/react@18.0.25)(react@18.2.0)
       '@next/mdx':
         specifier: 13.0.6
-        version: 13.0.6(@mdx-js/loader@3.1.0(acorn@8.8.1))(@mdx-js/react@2.2.1(react@18.2.0))
+        version: 13.0.6(@mdx-js/loader@3.1.0(acorn@8.8.1))(@mdx-js/react@3.1.0(@types/react@18.0.25)(react@18.2.0))
       '@tailwindcss/typography':
         specifier: ^0.5.15
         version: 0.5.15(tailwindcss@3.4.10)
@@ -105,6 +108,12 @@ packages:
   '@mdx-js/react@2.2.1':
     resolution: {integrity: sha512-YdXcMcEnqZhzql98RNrqYo9cEhTTesBiCclEtoiQUbJwx87q9453GTapYU6kJ8ZZ2ek1Vp25SiAXEFy5O/eAPw==}
     peerDependencies:
+      react: '>=16'
+
+  '@mdx-js/react@3.1.0':
+    resolution: {integrity: sha512-QjHtSaoameoalGnKDT3FoIl4+9RwyTmo9ZJGBdLOks/YOiWHoRDI3PUwEzOE7kEmGcV3AFcp9K6dYu9rEuKLAQ==}
+    peerDependencies:
+      '@types/react': '>=16'
       react: '>=16'
 
   '@napi-rs/simple-git-android-arm-eabi@0.1.8':
@@ -1933,6 +1942,12 @@ snapshots:
       '@types/react': 18.0.25
       react: 18.2.0
 
+  '@mdx-js/react@3.1.0(@types/react@18.0.25)(react@18.2.0)':
+    dependencies:
+      '@types/mdx': 2.0.3
+      '@types/react': 18.0.25
+      react: 18.2.0
+
   '@napi-rs/simple-git-android-arm-eabi@0.1.8':
     optional: true
 
@@ -1982,10 +1997,10 @@ snapshots:
 
   '@next/env@13.0.6': {}
 
-  '@next/mdx@13.0.6(@mdx-js/loader@3.1.0(acorn@8.8.1))(@mdx-js/react@2.2.1(react@18.2.0))':
+  '@next/mdx@13.0.6(@mdx-js/loader@3.1.0(acorn@8.8.1))(@mdx-js/react@3.1.0(@types/react@18.0.25)(react@18.2.0))':
     dependencies:
       '@mdx-js/loader': 3.1.0(acorn@8.8.1)
-      '@mdx-js/react': 2.2.1(react@18.2.0)
+      '@mdx-js/react': 3.1.0(@types/react@18.0.25)(react@18.2.0)
       source-map: 0.7.4
 
   '@next/swc-android-arm-eabi@13.0.6':
